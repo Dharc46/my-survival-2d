@@ -1,5 +1,4 @@
-This project is based on [Scavengers2D](https://github.com/KartikChugh/Scavengers2D) by Kartik Chugh,  
-licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+This project is based on [Scavengers2D](https://github.com/KartikChugh/Scavengers2D) by Kartik Chugh, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 2D Top-down roguelike made with **Unity**, featuring procedural dungeon generation
 
