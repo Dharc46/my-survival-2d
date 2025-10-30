@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DungeonManager : Singleton<DungeonManager>
 {
-    public PlayerStateManager playerPrefab;
+    public GameObject playerPrefab;
     public RoomManager RoomManager;
     //public MiniMap _miniMap;
     public GameObject miniMap;
@@ -42,7 +42,10 @@ public class DungeonManager : Singleton<DungeonManager>
         base.Awake();
         _mainCamera = Camera.main.transform;
         Vector2 position = new Vector2(Const.ScreenWitdth / 2.0f, Const.ScreenHeight / 2.0f);
-        _playerController = Instantiate(playerPrefab, position, Quaternion.identity);
+        // Spawn prefab và lấy component PlayerStateManager từ đó
+        _playerController = Instantiate(playerPrefab, position, Quaternion.identity)
+            .GetComponent<PlayerStateManager>();
+
         _playerTransform = _playerController.transform;
         _offsetX = _offsetY = 0;
 

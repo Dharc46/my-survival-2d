@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 919591573186871555}
   - component: {fileID: 5828633382976372668}
   - component: {fileID: 7181679513194413266}
+  - component: {fileID: -6957157142948374692}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -215,6 +216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 4
+  playerData: {fileID: 11400000, guid: afd096e7449c4b447b69ed819773fdfb, type: 2}
+  currentHealth: 0
+  inventory: {fileID: 0}
 --- !u!114 &7181679513194413266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +248,20 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   m_Movement: {x: 0, y: 0}
+--- !u!114 &-6957157142948374692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5828633382976372657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8412d7157c6b45904bab96695b077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSlots: 20
+  slots: []
 --- !u!1 &6947284320516378345
 GameObject:
   m_ObjectHideFlags: 0

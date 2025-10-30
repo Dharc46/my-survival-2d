@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b93cbe4b457404680cc7b980217faa, type: 3}
   m_Name: StoneAxeRecipe
   m_EditorClassIdentifier: 
-  ingredients: []
-  resultItem: {fileID: 0}
+  ingredients:
+  - item: {fileID: 11400000, guid: 843b0a7ad3bb2aa4aa3a917aa42d4b8a, type: 2}
+    amount: 3
+  - item: {fileID: 11400000, guid: 434aee1a5d0033b479143fe5c622620d, type: 2}
+    amount: 2
+  resultItem: {fileID: 11400000, guid: 97762b6facf1f4d49aaec4fbe5ada1b8, type: 2}
   resultCount: 1
   craftTime: 2
